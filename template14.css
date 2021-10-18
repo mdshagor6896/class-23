@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body, h1, h2, h3, h4, h5, p, span{
+    font-family: sans-serif;
+}
+.menu{}
+.menu ul{
+    list-style: none;
+    margin-bottom: 0;
+    margin-left: -40px;
+}
+.menu ul li{
+  display: inline-block;
+  margin-left: 5px;
+  text-align: center;
+  padding: 5px 10px;
+  background: #48dbfb;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: .6s;
+  
+}
+.menu ul li a{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    position: relative;
+}
+
+.menu ul li a::before{
+    content: "";
+    width:0;
+    height: 11%;
+    top: 100%;
+    left: 0;
+    border-bottom: 1px solid rgb(243, 238, 238);
+    background: #000;
+    position: absolute;
+    transition: .6s;
+}
+.menu ul li:hover a::before{
+    width: 100%;
+}
+.menu ul li:hover{
+  background: rgb(255, 255, 255);
+  
+}
+.menu ul li:hover a{
+    color: rgb(109, 216, 109);
+}
+.service-section{
+    background: #48dbfb;
+    color: white;
+    padding-bottom: 20px;
+}
+.service-section p{}
+.service-section h1{
+    font-weight: 700;
+}
+
+
+.service-section a:hover span{
+  color: rgb(252, 252, 252);
+  
+}
+.service-section a{
+    display: inline-block;
+    padding: 10px 10px;
+    background: white;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: rgb(161, 159, 159);
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+}
+.service-section a::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    background: #000;
+    border-radius: 5px;
+    z-index: -1;
+    transition: .6s;
+}
+.service-section a:hover::before{
+  width: 100%;
+ 
+}
+.service-section a:hover{
+    color: white;
+}
+.post-section{}
+.post-section h5{
+    font-weight: 700;
+}
+.post-section p{
+    font-size: 13px;
+    margin-top: -8px;
+    color: rgb(126, 122, 122);
+}
+
+.img-section{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+.img-section .img{
+    width: 23%;
+    display: inline-block;
+    transition: .6s;
+    margin: 0 0 20px 15px;
+    overflow: hidden;
+   
+}
+.img-section .img img{
+    max-width: 100%;
+    transition: .6s;
+}
+
+
+
+.img1:hover{
+    transform: rotate(360deg); 
+}
+.img2:hover{
+    transform: rotate(40deg); 
+}
+.img3:hover{
+    transform: rotate(-40deg); 
+}
+.img4:hover{
+    transform: rotate(40deg) scale(1.1); 
+}
+.img5:hover{
+    transform: rotate(-40deg) scale(1.1); 
+}
+.img6:hover{
+    transform: rotate(-360deg) scale(1.2); 
+}
+.img7:hover{
+    transform: rotateX(360deg); 
+}
+.img8:hover{
+    transform: scale(1.2); 
+}
+
+.img-section h5{
+    font-weight: 700;
+}
+.img-section p{
+    font-size: 13px;
+    text-align: center;
+    color: rgb(126, 122, 122);
+}
+
+.btn-section{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: -25px;
+    
+}
+
+.btn-section .botton{
+    width: 32%;
+    display: inline-block;
+    text-align: center;
+    
+}
+
+.btn-section .botton a{
+    display: inline-block;
+    padding: 5px 15px;
+    background: rgb(0, 0, 0);
+    margin-top: 20px;
+    
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    transition: .6s;
+}
+.btn1 a{
+    transform: rotate(-50deg);
+     
+}
+.btn1 a:hover{
+    transform: rotate(0deg) scale(1.2);
+    color: black;
+    background: rgb(16, 184, 170);
+}
+.btn2 a:hover{
+    transform: scale(1.2);
+    color: black;
+    background: rgb(16, 184, 170);
+}
+.btn3 a:hover{
+    transform: rotate(0deg) scale(1.2);
+    color: black;
+    background: rgb(16, 184, 170);
+}
+.btn3 a{
+    transform: rotate(50deg);
+
+}
+
+.footer-sectton{
+    background:#2e2f31;
+}
+.footer-sectton p{
+   color: white;
+}
